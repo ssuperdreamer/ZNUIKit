@@ -1,5 +1,5 @@
 platform:ios,'9.0'
-Target 'ZNCategory' do
+target 'ZNUIKit' do
  pod 'ReactiveObjC'
  pod 'SDAutoLayout'
  pod 'SVProgressHUD'
