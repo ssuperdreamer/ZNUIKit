@@ -18,7 +18,7 @@
 		39171A8824C871020096A307 /* UIImage+ZNCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917187724C870FF0096A307 /* UIImage+ZNCreate.m */; };
 		39171A8924C871020096A307 /* UIImage+ZNTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917187924C870FF0096A307 /* UIImage+ZNTool.m */; };
 		39171A8A24C871020096A307 /* NSDateComponents+ZNDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917187C24C870FF0096A307 /* NSDateComponents+ZNDateComponents.m */; };
-		39171A8B24C871020096A307 /* NSMutableAttributedString+ZNTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNTool.m */; };
+		39171A8B24C871020096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m */; };
 		39171A8C24C871020096A307 /* UIColor+ZNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917188224C870FF0096A307 /* UIColor+ZNColor.m */; };
 		39171A8D24C871020096A307 /* NSData+ZNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917188524C870FF0096A307 /* NSData+ZNBase64.m */; };
 		39171A8E24C871020096A307 /* NSURL+ZNURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917188924C870FF0096A307 /* NSURL+ZNURL.m */; };
@@ -44,9 +44,10 @@
 		39171AA524C871020096A307 /* UITableView+ZNExtendTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391718C524C870FF0096A307 /* UITableView+ZNExtendTableView.m */; };
 		39171AA724C871020096A307 /* UITextField+ZNCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 391718CD24C870FF0096A307 /* UITextField+ZNCreate.m */; };
 		39171AA824C871020096A307 /* UITextField+ZNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 391718CE24C870FF0096A307 /* UITextField+ZNTextField.m */; };
-		39171AAA24C871020096A307 /* UILable+ChangeStringSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 391718D924C871000096A307 /* UILable+ChangeStringSpace.m */; };
 		39171B4F24C87A200096A307 /* ZNEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171B4B24C87A200096A307 /* ZNEncryptTool.m */; };
 		39171B5024C87A200096A307 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171B4E24C87A200096A307 /* GTMBase64.m */; };
+		39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */; };
+		39E9F3EF24CB302E007BF08E /* UIImage+ZNCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */; };
 		AF92F8FC56516588022DF8A1 /* libPods-ZNUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EC524FC2A6BF5EFC3BB3F5 /* libPods-ZNUIKit.a */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +73,8 @@
 		3917187A24C870FF0096A307 /* UIImage+ZNCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNCreate.h"; sourceTree = "<group>"; };
 		3917187C24C870FF0096A307 /* NSDateComponents+ZNDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+ZNDateComponents.m"; sourceTree = "<group>"; };
 		3917187D24C870FF0096A307 /* NSDateComponents+ZNDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+ZNDateComponents.h"; sourceTree = "<group>"; };
-		3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ZNTool.m"; sourceTree = "<group>"; };
-		3917188024C870FF0096A307 /* NSMutableAttributedString+ZNTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ZNTool.h"; sourceTree = "<group>"; };
+		3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ZNMutableAttributeString.m"; sourceTree = "<group>"; };
+		3917188024C870FF0096A307 /* NSMutableAttributedString+ZNMutableAttributeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ZNMutableAttributeString.h"; sourceTree = "<group>"; };
 		3917188224C870FF0096A307 /* UIColor+ZNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZNColor.m"; sourceTree = "<group>"; };
 		3917188324C870FF0096A307 /* UIColor+ZNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZNColor.h"; sourceTree = "<group>"; };
 		3917188524C870FF0096A307 /* NSData+ZNBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZNBase64.m"; sourceTree = "<group>"; };
@@ -129,13 +130,15 @@
 		391718D124C870FF0096A307 /* ThreeHeadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeHeadFile.h; sourceTree = "<group>"; };
 		391718D224C870FF0096A307 /* ZNUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNUIKit.h; sourceTree = "<group>"; };
 		391718D324C870FF0096A307 /* ZNDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNDefineHeader.h; sourceTree = "<group>"; };
-		391718D724C871000096A307 /* UILable+ChangeStringSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILable+ChangeStringSpace.h"; sourceTree = "<group>"; };
-		391718D924C871000096A307 /* UILable+ChangeStringSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILable+ChangeStringSpace.m"; sourceTree = "<group>"; };
 		39171B4A24C87A200096A307 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		39171B4B24C87A200096A307 /* ZNEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNEncryptTool.m; sourceTree = "<group>"; };
 		39171B4C24C87A200096A307 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		39171B4D24C87A200096A307 /* ZNEncryptTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNEncryptTool.h; sourceTree = "<group>"; };
 		39171B4E24C87A200096A307 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		39E9F3EA24CB2E12007BF08E /* UIImage+ZNZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNZoom.h"; sourceTree = "<group>"; };
+		39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZNZoom.m"; sourceTree = "<group>"; };
+		39E9F3ED24CB302E007BF08E /* UIImage+ZNCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNCut.h"; sourceTree = "<group>"; };
+		39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZNCut.m"; sourceTree = "<group>"; };
 		87731125C97313186DF7818F /* Pods-ZNUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNUIKit.debug.xcconfig"; path = "Target Support Files/Pods-ZNUIKit/Pods-ZNUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F622213FBF1D252383400BCD /* Pods-ZNUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNUIKit.release.xcconfig"; path = "Target Support Files/Pods-ZNUIKit/Pods-ZNUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +246,10 @@
 				3917187824C870FF0096A307 /* UIImage+ZNImage.h */,
 				3917187924C870FF0096A307 /* UIImage+ZNTool.m */,
 				3917187A24C870FF0096A307 /* UIImage+ZNCreate.h */,
+				39E9F3EA24CB2E12007BF08E /* UIImage+ZNZoom.h */,
+				39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */,
+				39E9F3ED24CB302E007BF08E /* UIImage+ZNCut.h */,
+				39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -259,8 +266,8 @@
 		3917187E24C870FF0096A307 /* NSMutableAttributedString */ = {
 			isa = PBXGroup;
 			children = (
-				3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNTool.m */,
-				3917188024C870FF0096A307 /* NSMutableAttributedString+ZNTool.h */,
+				3917187F24C870FF0096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m */,
+				3917188024C870FF0096A307 /* NSMutableAttributedString+ZNMutableAttributeString.h */,
 			);
 			path = NSMutableAttributedString;
 			sourceTree = "<group>";
@@ -345,8 +352,6 @@
 		391718A324C870FF0096A307 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				391718D724C871000096A307 /* UILable+ChangeStringSpace.h */,
-				391718D924C871000096A307 /* UILable+ChangeStringSpace.m */,
 				391718A424C870FF0096A307 /* UILabel+ZNCreate.m */,
 				391718A524C870FF0096A307 /* UILabel+ZNLabel.h */,
 				391718A624C870FF0096A307 /* UILabel+ZNCreate.h */,
@@ -586,10 +591,10 @@
 				39171A9C24C871020096A307 /* UIView+ZNCreate.m in Sources */,
 				39171A9224C871020096A307 /* NSString+ZNString.m in Sources */,
 				39171A8724C871020096A307 /* UIImage+ZNImage.m in Sources */,
+				39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */,
 				39171AA324C871020096A307 /* UIViewController+ZNViewController.m in Sources */,
 				39171A8F24C871020096A307 /* NSString+ZNDate.m in Sources */,
 				39171A8824C871020096A307 /* UIImage+ZNCreate.m in Sources */,
-				39171AAA24C871020096A307 /* UILable+ChangeStringSpace.m in Sources */,
 				39171A9D24C871020096A307 /* UIView+ZNView.m in Sources */,
 				39171A9F24C871020096A307 /* UITextView+ZNUITextView.m in Sources */,
 				39171A8A24C871020096A307 /* NSDateComponents+ZNDateComponents.m in Sources */,
@@ -600,7 +605,7 @@
 				39171B5024C87A200096A307 /* GTMBase64.m in Sources */,
 				39171A9E24C871020096A307 /* UITextView+ZNCreate.m in Sources */,
 				39171A9024C871020096A307 /* NSString+ZNCryp.m in Sources */,
-				39171A8B24C871020096A307 /* NSMutableAttributedString+ZNTool.m in Sources */,
+				39171A8B24C871020096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m in Sources */,
 				39171A9324C871020096A307 /* NSObject+ZNSql.m in Sources */,
 				39171A9B24C871020096A307 /* UIButton+ZNButton.m in Sources */,
 				39171A9924C871020096A307 /* UILabel+ZNLabel.m in Sources */,
@@ -619,6 +624,7 @@
 				39171A8D24C871020096A307 /* NSData+ZNBase64.m in Sources */,
 				39171AA424C871020096A307 /* UITableView+ZNCreate.m in Sources */,
 				39171A8E24C871020096A307 /* NSURL+ZNURL.m in Sources */,
+				39E9F3EF24CB302E007BF08E /* UIImage+ZNCut.m in Sources */,
 				39171A8924C871020096A307 /* UIImage+ZNTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

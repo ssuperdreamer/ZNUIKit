@@ -57,36 +57,6 @@
                        Failed:(void(^)(NSString *fail))Failed;
 
 /**
- 根据颜色获取到纯色图片
- @param color 颜色
- @param size 图片大小
- @return <#return value description#>
- */
-+ (UIImage *)zn_createImageWithColor:(UIColor *)color
-                             size:(CGSize)size;
-
-/**
- 图片缩放
- @param size 要缩放的大小
- @return <#return value description#>
- */
-- (UIImage *)zn_zoomWithSize:(CGSize)size;
-
-/**
- 根据宽比例进行缩放
- @param width <#width description#>
- @return <#return value description#>
- */
-- (UIImage *)zn_zoomWithWidth:(CGFloat)width;
-
-/**
- 根据高比例进行缩放
- @param height <#width description#>
- @return <#return value description#>
- */
-- (UIImage *)zn_zoomWithHeight:(CGFloat)height;
-
-/**
  获取图片的主色调
  
  @return <#return value description#>

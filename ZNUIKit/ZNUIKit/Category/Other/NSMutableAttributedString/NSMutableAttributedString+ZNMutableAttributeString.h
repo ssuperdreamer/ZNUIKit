@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSMutableAttributedString (ZNTool)
+@interface NSMutableAttributedString (ZNMutableAttributeString)
 
 /**
  获取富文本

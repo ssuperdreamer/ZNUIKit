@@ -29,8 +29,8 @@
  @param url <#url description#>
  @param block <#block description#>
  */
-+ (void)zn_createWithUrl:(NSString*) url
-                   block:(void (^)(UIImage * image)) block{
++ (void)zn_createWithLocationUrl:(NSString*) url
+                           block:(void (^)(UIImage * image)) block{
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
     if (block) {
         block([UIImage imageWithData:data]);
@@ -43,7 +43,7 @@
  @param view 需要截图的view
  @return <#return value description#>
  */
-+ (UIImage *)zn_CreateImageVagueWithView:(UIView *) view{
++ (UIImage *)zn_createImageVagueWithView:(UIView *) view{
     UIGraphicsBeginImageContext(view.bounds.size);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -74,7 +74,7 @@
  @param size 大小
  @return 一张图片
  */
-+ (UIImage *)zn_imageWithColor:(UIColor *)color size:(CGSize)size {
++ (UIImage *)zn_createImageWithColor:(UIColor *)color size:(CGSize)size {
     if (!color || size.width <= 0 || size.height <= 0) return nil;
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width + 1, size.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
@@ -87,7 +87,7 @@
 }
 
 /** 根据颜色生成纯色图片 */
-+ (UIImage *)zn_imageWithColor:(UIColor *)color
++ (UIImage *)zn_createImageWithColor:(UIColor *)color
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -109,7 +109,7 @@
  @param size 生成的图片大小
  @return 生成的图片
  */
-+ (UIImage *) zn_resizeCodeImage:(CIImage *)image withSize:(CGSize)size
++ (UIImage *) zn_createImageWithCIImage:(CIImage *)image withSize:(CGSize)size
 {
     if (image) {
         CGRect extent = CGRectIntegral(image.extent);

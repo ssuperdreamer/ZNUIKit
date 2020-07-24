@@ -49,4 +49,20 @@
 /// @param text <#text description#>
 - (void)zn_setCenterLineWithString:(NSString *) text;
 
+/// 改变行距
+/// @param lable <#lable description#>
+/// @param space <#space description#>
++ (void)zn_changeLineSpaceforLable:(UILabel *)lable WithSpace:(float)space;
+
+/// 改变字间距
+/// @param lable <#lable description#>
+/// @param space <#space description#>
++ (void)zn_changeWordSpaceForLabel:(UILabel *)lable WithSpace:(float)space;
+
+/// 改变字行 间距
+/// @param lable <#lable description#>
+/// @param linkspace <#linkspace description#>
+/// @param wordspace <#wordspace description#>
++ (void)zn_changeSpaceForLable:(UILabel *)lable withLineSpace:(float)linkspace WordSpace:(float)wordspace;
+
 @end

@@ -6,9 +6,9 @@
 //  Copyright © 2019 南木南木. All rights reserved.
 //
 
-#import "NSMutableAttributedString+ZNTool.h"
+#import "NSMutableAttributedString+ZNMutableAttributeString.h"
 
-@implementation NSMutableAttributedString (ZNTool)
+@implementation NSMutableAttributedString (ZNMutableAttributeString)
 
 + (NSMutableAttributedString *) zn_createWithText:(NSString *) text
                                              font:(UIFont *) font
