@@ -48,6 +48,7 @@
 		39171B5024C87A200096A307 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171B4E24C87A200096A307 /* GTMBase64.m */; };
 		39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */; };
 		39E9F3EF24CB302E007BF08E /* UIImage+ZNCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */; };
+		39E9F3F524CB3145007BF08E /* ZNMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3F424CB3145007BF08E /* ZNMediator.m */; };
 		AF92F8FC56516588022DF8A1 /* libPods-ZNUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EC524FC2A6BF5EFC3BB3F5 /* libPods-ZNUIKit.a */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,9 @@
 		39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZNZoom.m"; sourceTree = "<group>"; };
 		39E9F3ED24CB302E007BF08E /* UIImage+ZNCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNCut.h"; sourceTree = "<group>"; };
 		39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZNCut.m"; sourceTree = "<group>"; };
+		39E9F3F224CB3145007BF08E /* ZNMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNMediator.h; sourceTree = "<group>"; };
+		39E9F3F324CB3145007BF08E /* ZNMediatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNMediatorDelegate.h; sourceTree = "<group>"; };
+		39E9F3F424CB3145007BF08E /* ZNMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNMediator.m; sourceTree = "<group>"; };
 		87731125C97313186DF7818F /* Pods-ZNUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNUIKit.debug.xcconfig"; path = "Target Support Files/Pods-ZNUIKit/Pods-ZNUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F622213FBF1D252383400BCD /* Pods-ZNUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNUIKit.release.xcconfig"; path = "Target Support Files/Pods-ZNUIKit/Pods-ZNUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +189,7 @@
 		3917185724C8703E0096A307 /* ZNUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				39E9F3F124CB3145007BF08E /* ZNMediator */,
 				3917187124C870890096A307 /* ZNUIKit */,
 				3917185824C8703E0096A307 /* AppDelegate.h */,
 				3917185924C8703E0096A307 /* AppDelegate.m */,
@@ -466,6 +471,16 @@
 			path = CrypTool;
 			sourceTree = "<group>";
 		};
+		39E9F3F124CB3145007BF08E /* ZNMediator */ = {
+			isa = PBXGroup;
+			children = (
+				39E9F3F224CB3145007BF08E /* ZNMediator.h */,
+				39E9F3F324CB3145007BF08E /* ZNMediatorDelegate.h */,
+				39E9F3F424CB3145007BF08E /* ZNMediator.m */,
+			);
+			path = ZNMediator;
+			sourceTree = "<group>";
+		};
 		850047DD76F210793DFB9102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,6 +623,7 @@
 				39171A8B24C871020096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m in Sources */,
 				39171A9324C871020096A307 /* NSObject+ZNSql.m in Sources */,
 				39171A9B24C871020096A307 /* UIButton+ZNButton.m in Sources */,
+				39E9F3F524CB3145007BF08E /* ZNMediator.m in Sources */,
 				39171A9924C871020096A307 /* UILabel+ZNLabel.m in Sources */,
 				39171A9A24C871020096A307 /* UIButton+ZNCreate.m in Sources */,
 				39171AA724C871020096A307 /* UITextField+ZNCreate.m in Sources */,
