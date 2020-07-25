@@ -16,14 +16,14 @@
                           completion:(void(^_Nullable)(NSDictionary * _Nullable info))completion;
 
 // 本地组件调用入口
-- (id _Nullable )performTarget:(NSString * _Nullable)targetName
+- (id _Nullable)performTarget:(NSString * _Nullable)targetName
                         action:(NSString * _Nullable)actionName
                         params:(NSArray * _Nullable)params
              shouldCacheTarget:(BOOL)shouldCacheTarget;
 
 /// 释放缓存的cachedTarget
 /// @param fullTargetName <#fullTargetName description#>
-- (void)releaseCachedTargetWithFullTargetName:(NSString * _Nullable)fullTargetName;
+- (void)releaseCachedTargetWithFullTargetName:(NSString * _Nullable) fullTargetName;
 
 @end
 
