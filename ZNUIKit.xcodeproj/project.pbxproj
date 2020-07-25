@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1414283824CC20B00024C137 /* UIView+ZNCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1414283724CC20B00024C137 /* UIView+ZNCorner.m */; };
 		3917185A24C8703E0096A307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917185924C8703E0096A307 /* AppDelegate.m */; };
 		3917185D24C8703E0096A307 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917185C24C8703E0096A307 /* SceneDelegate.m */; };
 		3917186024C8703E0096A307 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917185F24C8703E0096A307 /* ViewController.m */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1414283624CC20AF0024C137 /* UIView+ZNCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZNCorner.h"; sourceTree = "<group>"; };
+		1414283724CC20B00024C137 /* UIView+ZNCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZNCorner.m"; sourceTree = "<group>"; };
 		37EC524FC2A6BF5EFC3BB3F5 /* libPods-ZNUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZNUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917185524C8703E0096A307 /* ZNUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZNUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3917185824C8703E0096A307 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -379,6 +382,8 @@
 		391718AD24C870FF0096A307 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				1414283624CC20AF0024C137 /* UIView+ZNCorner.h */,
+				1414283724CC20B00024C137 /* UIView+ZNCorner.m */,
 				391718AE24C870FF0096A307 /* UIView+ZNCreate.m */,
 				391718AF24C870FF0096A307 /* UIView+ZNView.h */,
 				391718B024C870FF0096A307 /* UIView+ZNCreate.h */,
@@ -604,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39171A9C24C871020096A307 /* UIView+ZNCreate.m in Sources */,
+				1414283824CC20B00024C137 /* UIView+ZNCorner.m in Sources */,
 				39171A9224C871020096A307 /* NSString+ZNString.m in Sources */,
 				39171A8724C871020096A307 /* UIImage+ZNImage.m in Sources */,
 				39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */,
