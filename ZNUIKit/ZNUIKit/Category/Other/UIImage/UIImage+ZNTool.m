@@ -73,47 +73,26 @@
     return grayImage;
 }
 
-/**
- 
- 对图片进行缩放的工具类
- @param image  需要缩放的图片
- @param size  需要的图片大小
- @return  返回的图片
- */
-+(UIImage*)zn_originImage:(UIImage *)image scaleToSize:(CGSize)size{
-    UIGraphicsBeginImageContext(size);  //size 为CGSize类型，即你所需要的图片尺寸
-    
-    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    
-    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return scaledImage;   //返回的就是已经改变的图片
-}
-
 #pragma mark --------旋转
-//--------------------------------------------------旋转
+
 /**
  *  得到旋转后的图片
  *
- *  @param image 原图
  *  @param Angle 角度（0~360）
  *
  *  @return 新生成的图片
  */
-+(UIImage  *)GetRotationImageWithImage:(UIImage *)image
-                                 Angle:(CGFloat)Angle
+-(UIImage  *)zn_getRotationAngle:(CGFloat)Angle
 {
     
     UIView *RootBackView = [[UIView alloc] initWithFrame:CGRectMake(0,0,
-                                                                    image.size.width,
-                                                                    image.size.height)];
+                                                                    self.size.width,
+                                                                    self.size.height)];
     CGAffineTransform t = CGAffineTransformMakeRotation( Angle* M_PI / 180);
     RootBackView.transform = t;
     CGSize rotatedSize = RootBackView.frame.size;
     
-    UIGraphicsBeginImageContextWithOptions(rotatedSize, NO, image.scale);
+    UIGraphicsBeginImageContextWithOptions(rotatedSize, NO, self.scale);
     
     CGContextRef theContext = UIGraphicsGetCurrentContext();
     
@@ -122,11 +101,11 @@
     CGContextScaleCTM(theContext, 1.0, -1.0);
     
     CGContextDrawImage(theContext,
-                       CGRectMake(-image.size.width / 2,
-                                  -image.size.height / 2,
-                                  image.size.width,
-                                  image.size.height),
-                       [image CGImage]);
+                       CGRectMake(-self.size.width / 2,
+                                  -self.size.height / 2,
+                                  self.size.width,
+                                  self.size.height),
+                       [self CGImage]);
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -136,7 +115,7 @@
 
 // 照相机图片旋转
 
-+ (UIImage *)fixOrientation:(UIImage *)aImage {
++ (UIImage *)zn_fixOrientation:(UIImage *)aImage {
       
     // No-op if the orientation is already correct
     if (aImage.imageOrientation == UIImageOrientationUp)
@@ -211,73 +190,6 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
-}
-
-/**
- 
- 将图片按最大圆形进行裁剪，并返回裁剪后的图片
- @param image  要裁剪成圆形的图片
- @return  返回已经裁剪完的图片
- */
-+(UIImage*)zn_originImage:(UIImage*) image{
-    UIImage *finshImage;
-    //获取图片尺寸
-    CGSize size = image.size;
-    
-    //开启位图上下文
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    
-    //创建圆形路径
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-    
-    //设置为裁剪区域
-    [path addClip];
-    
-    //绘制图片
-    [image drawAtPoint:CGPointZero];
-    
-    //获取裁剪后的图片
-    finshImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    //关闭上下文
-    UIGraphicsEndImageContext();
-    
-    return finshImage;
-}
-
-/**
- 
- @param image  要进行缩放，并裁剪的图片
- @param size  要裁剪的大小
- @return  返回裁剪并缩小后的图片
- */
-+(UIImage*)zn_originImage:(UIImage*) image roundSize:(CGSize) size{
-    return [self zn_originImage:[self zn_originImage:image scaleToSize:size]];
-}
-
-+ (UIImage*) zoomImagewith:(UIImage*) image standard:(CGFloat) standard{
-    CGFloat sizenumber = standard/image.size.width;
-    return [self zn_originImage:image scaleToSize:CGSizeMake(sizenumber * image.size.width, sizenumber * image.size.height)];
-}
-
-/**
- *从图片中按指定的位置大小截取图片的一部分
- * UIImage image 原始的图片
- * CGRect rect 要截取的区域
- */
-+ (UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect{
-    
-    //将UIImage转换成CGImageRef
-    CGImageRef sourceImageRef = [image CGImage];
-    
-    //按照给定的矩形区域进行剪裁
-    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, rect);
-    
-    //将CGImageRef转换成UIImage
-    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
-    
-    //返回剪裁后的图片
-    return newImage;
 }
 
 @end
