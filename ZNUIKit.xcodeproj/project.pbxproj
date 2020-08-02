@@ -46,6 +46,10 @@
 		39171AA824C871020096A307 /* UITextField+ZNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 391718CE24C870FF0096A307 /* UITextField+ZNTextField.m */; };
 		39171B4F24C87A200096A307 /* ZNEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171B4B24C87A200096A307 /* ZNEncryptTool.m */; };
 		39171B5024C87A200096A307 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171B4E24C87A200096A307 /* GTMBase64.m */; };
+		39D1B02524D696DE00E0B774 /* ZNNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D1B01C24D696DE00E0B774 /* ZNNetManager.m */; };
+		39D1B02624D696DE00E0B774 /* ZNResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D1B02124D696DE00E0B774 /* ZNResponseMessage.m */; };
+		39D1B02724D696DE00E0B774 /* ZNFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D1B02224D696DE00E0B774 /* ZNFileModel.m */; };
+		39D1B02824D696DE00E0B774 /* ZNNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D1B02424D696DE00E0B774 /* ZNNetRequest.m */; };
 		39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */; };
 		39E9F3EF24CB302E007BF08E /* UIImage+ZNCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3EE24CB302E007BF08E /* UIImage+ZNCut.m */; };
 		39E9F3F524CB3145007BF08E /* ZNMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9F3F424CB3145007BF08E /* ZNMediator.m */; };
@@ -136,6 +140,14 @@
 		39171B4C24C87A200096A307 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		39171B4D24C87A200096A307 /* ZNEncryptTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNEncryptTool.h; sourceTree = "<group>"; };
 		39171B4E24C87A200096A307 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		39D1B01C24D696DE00E0B774 /* ZNNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNNetManager.m; sourceTree = "<group>"; };
+		39D1B01D24D696DE00E0B774 /* ZNNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNNetRequest.h; sourceTree = "<group>"; };
+		39D1B01F24D696DE00E0B774 /* ZNResponseMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNResponseMessage.h; sourceTree = "<group>"; };
+		39D1B02024D696DE00E0B774 /* ZNFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNFileModel.h; sourceTree = "<group>"; };
+		39D1B02124D696DE00E0B774 /* ZNResponseMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNResponseMessage.m; sourceTree = "<group>"; };
+		39D1B02224D696DE00E0B774 /* ZNFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNFileModel.m; sourceTree = "<group>"; };
+		39D1B02324D696DE00E0B774 /* ZNNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNNetManager.h; sourceTree = "<group>"; };
+		39D1B02424D696DE00E0B774 /* ZNNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNNetRequest.m; sourceTree = "<group>"; };
 		39E9F3EA24CB2E12007BF08E /* UIImage+ZNZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNZoom.h"; sourceTree = "<group>"; };
 		39E9F3EB24CB2E12007BF08E /* UIImage+ZNZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZNZoom.m"; sourceTree = "<group>"; };
 		39E9F3ED24CB302E007BF08E /* UIImage+ZNCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZNCut.h"; sourceTree = "<group>"; };
@@ -209,6 +221,7 @@
 		3917187124C870890096A307 /* ZNUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				39D1B01B24D696DE00E0B774 /* ZNNetWork */,
 				39171B4824C87A160096A307 /* Tool */,
 				3917187224C870FF0096A307 /* Category */,
 				391718CF24C870FF0096A307 /* Header */,
@@ -471,6 +484,29 @@
 			path = CrypTool;
 			sourceTree = "<group>";
 		};
+		39D1B01B24D696DE00E0B774 /* ZNNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				39D1B01C24D696DE00E0B774 /* ZNNetManager.m */,
+				39D1B01D24D696DE00E0B774 /* ZNNetRequest.h */,
+				39D1B01E24D696DE00E0B774 /* Model */,
+				39D1B02324D696DE00E0B774 /* ZNNetManager.h */,
+				39D1B02424D696DE00E0B774 /* ZNNetRequest.m */,
+			);
+			path = ZNNetWork;
+			sourceTree = "<group>";
+		};
+		39D1B01E24D696DE00E0B774 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39D1B01F24D696DE00E0B774 /* ZNResponseMessage.h */,
+				39D1B02024D696DE00E0B774 /* ZNFileModel.h */,
+				39D1B02124D696DE00E0B774 /* ZNResponseMessage.m */,
+				39D1B02224D696DE00E0B774 /* ZNFileModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		39E9F3F124CB3145007BF08E /* ZNMediator */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +642,7 @@
 				39171A9C24C871020096A307 /* UIView+ZNCreate.m in Sources */,
 				39171A9224C871020096A307 /* NSString+ZNString.m in Sources */,
 				39171A8724C871020096A307 /* UIImage+ZNImage.m in Sources */,
+				39D1B02524D696DE00E0B774 /* ZNNetManager.m in Sources */,
 				39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */,
 				39171AA324C871020096A307 /* UIViewController+ZNViewController.m in Sources */,
 				39171A8F24C871020096A307 /* NSString+ZNDate.m in Sources */,
@@ -613,6 +650,8 @@
 				39171A9D24C871020096A307 /* UIView+ZNView.m in Sources */,
 				39171A9F24C871020096A307 /* UITextView+ZNUITextView.m in Sources */,
 				39171A8A24C871020096A307 /* NSDateComponents+ZNDateComponents.m in Sources */,
+				39D1B02724D696DE00E0B774 /* ZNFileModel.m in Sources */,
+				39D1B02624D696DE00E0B774 /* ZNResponseMessage.m in Sources */,
 				39171A8C24C871020096A307 /* UIColor+ZNColor.m in Sources */,
 				3917186024C8703E0096A307 /* ViewController.m in Sources */,
 				39171A9124C871020096A307 /* NSString+ZNRule.m in Sources */,
@@ -620,6 +659,7 @@
 				39171B5024C87A200096A307 /* GTMBase64.m in Sources */,
 				39171A9E24C871020096A307 /* UITextView+ZNCreate.m in Sources */,
 				39171A9024C871020096A307 /* NSString+ZNCryp.m in Sources */,
+				39D1B02824D696DE00E0B774 /* ZNNetRequest.m in Sources */,
 				39171A8B24C871020096A307 /* NSMutableAttributedString+ZNMutableAttributeString.m in Sources */,
 				39171A9324C871020096A307 /* NSObject+ZNSql.m in Sources */,
 				39171A9B24C871020096A307 /* UIButton+ZNButton.m in Sources */,

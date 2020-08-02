@@ -7,7 +7,7 @@
 //
 
 #import "UIColor+ZNColor.h"
-#import "ThreeHeadFile.h"
+#import <YYKit/YYKit.h>
 
 @implementation UIColor (ZNColor)
 
@@ -45,7 +45,7 @@
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
 
-+(UIColor *)getSixteenToRGBColor:(NSString *)hexColor {
++(UIColor *)zn_getSixteenToRGBColor:(NSString *)hexColor {
 //    [self getSixteenToRGBColor:@"#1B9E5CFF"];//
     unsigned int red,green,blue,aphex;
     hexColor = [hexColor stringByReplacingOccurrencesOfString:@"#" withString:@""];
@@ -75,14 +75,14 @@
     }
 }
 
-//+(UIColor *) createGradualColorByStartColor:(UIColor *) startColor EndColor:(UIColor *) endColor offSetPercent:(CGFloat) percent {
-//
-//    CGFloat red = [self interpolationFrom:startColor.red to:endColor.red percent:percent];
-//    CGFloat green = [self interpolationFrom:startColor.green to:endColor.green percent:percent];
-//    CGFloat blue = [self interpolationFrom:startColor.blue to:endColor.blue percent:percent];
-//    CGFloat alpha = [self interpolationFrom:startColor.alpha to:endColor.alpha percent:percent];
-//    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-//}
++(UIColor *) createGradualColorByStartColor:(UIColor *) startColor EndColor:(UIColor *) endColor offSetPercent:(CGFloat) percent {
+
+    CGFloat red = [self interpolationFrom:startColor.red to:endColor.red percent:percent];
+    CGFloat green = [self interpolationFrom:startColor.green to:endColor.green percent:percent];
+    CGFloat blue = [self interpolationFrom:startColor.blue to:endColor.blue percent:percent];
+    CGFloat alpha = [self interpolationFrom:startColor.alpha to:endColor.alpha percent:percent];
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
 
 + (CGFloat)interpolationFrom:(CGFloat)from to:(CGFloat)to percent:(CGFloat)percent
 {

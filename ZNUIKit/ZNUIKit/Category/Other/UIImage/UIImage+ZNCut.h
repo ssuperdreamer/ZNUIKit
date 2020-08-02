@@ -44,6 +44,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)zn_cutRound;
 
+/**
+ *从图片中按指定的位置大小截取图片的一部分
+ * UIImage image 原始的图片
+ * CGRect rect 要截取的区域
+ */
++ (UIImage *)zn_cutImageFromImage:(UIImage *)image inRect:(CGRect)rect;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -213,7 +213,7 @@ UIKIT_STATIC_INLINE UIColor * zn_colorString(NSString * color){
 @return <#return value description#>
 */
 UIKIT_STATIC_INLINE UIColor * zn_colorAlphaString(NSString * color){
-    UIColor * znColor = [UIColor getSixteenToRGBColor:color];
+    UIColor * znColor = [UIColor zn_getSixteenToRGBColor:color];
     return znColor;
 }
 

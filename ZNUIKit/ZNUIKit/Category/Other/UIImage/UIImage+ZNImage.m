@@ -9,7 +9,6 @@
 #import "UIImage+ZNImage.h"
 #import "ZNStateFunction.h"
 #import "ThreeHeadFile.h"
-#import <SDImageCache.h>
 
 @implementation UIImage (ZNImage)
 
