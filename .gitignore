@@ -31,7 +31,7 @@ DerivedData/
 *.dSYM
 
 #忽略pods文件目录
-!pods/
+/pods
 
 # CocoaPods
 #
