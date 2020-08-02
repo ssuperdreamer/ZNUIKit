@@ -36,6 +36,10 @@ UIKIT_STATIC_INLINE NSDictionary * zn_objectWithJson(NSString * json){
     return dic;
 }
 
+
+
+
+
 /**
  <#Description#>
 
@@ -77,14 +81,7 @@ UIKIT_STATIC_INLINE CGFloat zn_flatSpecificScale(CGFloat floatValue, CGFloat sca
     return flattedValue;
 }
 
-/// 导航栏高度
-UIKIT_STATIC_INLINE CGFloat zn_stateHeight(){
-    if (@available(iOS 13.0, *)) {
-        return znStateSize.height;
-    } else {
-        return znStateSize.height;
-    }
-}
+
 
 /**
  对像素进行取整处理
@@ -542,6 +539,22 @@ UIKIT_STATIC_INLINE void zn_callPhone(NSString * phone,UIView * view){
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         view.userInteractionEnabled = YES;
     });
+}
+
+
+
+#pragma mark 系统UI相关 状态栏 Tab等等
+
+UIKIT_STATIC_INLINE CGFloat statusBarHight() {
+    float statusBarHeight = 0;
+    if (@available(iOS 13.0, *)) {
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager;
+        statusBarHeight = statusBarManager.statusBarFrame.size.height;
+    }
+    else {
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    return statusBarHeight;
 }
 
 #endif /* ZNStateFunction_h */

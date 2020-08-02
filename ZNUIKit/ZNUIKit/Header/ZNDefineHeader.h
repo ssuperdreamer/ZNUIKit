@@ -20,10 +20,11 @@
 #define znTabBarHeight (CGFloat)(kIs_iPhoneX?(49.0 + 34.0):(49.0))
 
 //状态栏高度大小
-#define znStateSize [UIApplication sharedApplication].statusBarFrame.size
-#define znStateHeight zn_stateHeight()
+#define znStateHeight statusBarHight()
+//导航栏高度
+#define znNavHeight znStateHeight + (self.navigationController ? self.navigationController.navigationBar.frame.size.height : 44 )
 
-#define NAV_Height ([[UIApplication sharedApplication] statusBarFrame].size.height + 44)
+
 
 //屏幕像素比例
 #define znScreenScale ([[UIScreen mainScreen] scale])

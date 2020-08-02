@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141328D324D6AE3500EEC3D4 /* InnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328D224D6AE3500EEC3D4 /* InnerViewController.m */; };
+		141328D624D6B15F00EEC3D4 /* ZNMediator+ViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328D524D6B15F00EEC3D4 /* ZNMediator+ViewFactory.m */; };
+		141328D924D6B7C800EEC3D4 /* InnerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328D824D6B7C800EEC3D4 /* InnerViewModel.m */; };
+		141328DD24D6C53900EEC3D4 /* Target_ViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328DC24D6C53900EEC3D4 /* Target_ViewFactory.m */; };
+		141328E224D6C6D300EEC3D4 /* ZNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328E124D6C6D300EEC3D4 /* ZNBaseViewController.m */; };
+		141328E524D6C70500EEC3D4 /* ZNBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 141328E424D6C70500EEC3D4 /* ZNBaseViewModel.m */; };
 		1414283824CC20B00024C137 /* UIView+ZNCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1414283724CC20B00024C137 /* UIView+ZNCorner.m */; };
 		3917185A24C8703E0096A307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917185924C8703E0096A307 /* AppDelegate.m */; };
 		3917185D24C8703E0096A307 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3917185C24C8703E0096A307 /* SceneDelegate.m */; };
@@ -54,6 +60,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141328C624D6960100EEC3D4 /* ZN_SynthesizeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZN_SynthesizeSingleton.h; sourceTree = "<group>"; };
+		141328D124D6AE3500EEC3D4 /* InnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InnerViewController.h; sourceTree = "<group>"; };
+		141328D224D6AE3500EEC3D4 /* InnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InnerViewController.m; sourceTree = "<group>"; };
+		141328D424D6B15F00EEC3D4 /* ZNMediator+ViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZNMediator+ViewFactory.h"; sourceTree = "<group>"; };
+		141328D524D6B15F00EEC3D4 /* ZNMediator+ViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZNMediator+ViewFactory.m"; sourceTree = "<group>"; };
+		141328D724D6B7C800EEC3D4 /* InnerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InnerViewModel.h; sourceTree = "<group>"; };
+		141328D824D6B7C800EEC3D4 /* InnerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InnerViewModel.m; sourceTree = "<group>"; };
+		141328DB24D6C53900EEC3D4 /* Target_ViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ViewFactory.h; sourceTree = "<group>"; };
+		141328DC24D6C53900EEC3D4 /* Target_ViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ViewFactory.m; sourceTree = "<group>"; };
+		141328DE24D6C5AD00EEC3D4 /* ViewFactoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFactoryHeader.h; sourceTree = "<group>"; };
+		141328E024D6C6D300EEC3D4 /* ZNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNBaseViewController.h; sourceTree = "<group>"; };
+		141328E124D6C6D300EEC3D4 /* ZNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZNBaseViewController.m; sourceTree = "<group>"; };
+		141328E324D6C70500EEC3D4 /* ZNBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNBaseViewModel.h; sourceTree = "<group>"; };
+		141328E424D6C70500EEC3D4 /* ZNBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZNBaseViewModel.m; sourceTree = "<group>"; };
+		141328E624D6C86400EEC3D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ZNUIKit/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		1414283624CC20AF0024C137 /* UIView+ZNCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZNCorner.h"; sourceTree = "<group>"; };
 		1414283724CC20B00024C137 /* UIView+ZNCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZNCorner.m"; sourceTree = "<group>"; };
 		37EC524FC2A6BF5EFC3BB3F5 /* libPods-ZNUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZNUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +183,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141328C524D695E300EEC3D4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				141328C624D6960100EEC3D4 /* ZN_SynthesizeSingleton.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		141328D024D6AE0B00EEC3D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				141328D124D6AE3500EEC3D4 /* InnerViewController.h */,
+				141328D224D6AE3500EEC3D4 /* InnerViewController.m */,
+				141328D724D6B7C800EEC3D4 /* InnerViewModel.h */,
+				141328D824D6B7C800EEC3D4 /* InnerViewModel.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		141328DA24D6C51F00EEC3D4 /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				141328DB24D6C53900EEC3D4 /* Target_ViewFactory.h */,
+				141328DC24D6C53900EEC3D4 /* Target_ViewFactory.m */,
+				141328DE24D6C5AD00EEC3D4 /* ViewFactoryHeader.h */,
+				141328D424D6B15F00EEC3D4 /* ZNMediator+ViewFactory.h */,
+				141328D524D6B15F00EEC3D4 /* ZNMediator+ViewFactory.m */,
+			);
+			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		141328DF24D6C6B100EEC3D4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				141328E024D6C6D300EEC3D4 /* ZNBaseViewController.h */,
+				141328E124D6C6D300EEC3D4 /* ZNBaseViewController.m */,
+				141328E324D6C70500EEC3D4 /* ZNBaseViewModel.h */,
+				141328E424D6C70500EEC3D4 /* ZNBaseViewModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		15464C8962E7D96ADB16F8B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +255,9 @@
 		3917185724C8703E0096A307 /* ZNUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				141328DF24D6C6B100EEC3D4 /* Base */,
+				141328DA24D6C51F00EEC3D4 /* ViewFactory */,
+				141328D024D6AE0B00EEC3D4 /* ViewController */,
 				39E9F3F124CB3145007BF08E /* ZNMediator */,
 				3917187124C870890096A307 /* ZNUIKit */,
 				3917185824C8703E0096A307 /* AppDelegate.h */,
@@ -212,9 +278,11 @@
 		3917187124C870890096A307 /* ZNUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				141328C524D695E300EEC3D4 /* Util */,
 				39171B4824C87A160096A307 /* Tool */,
 				3917187224C870FF0096A307 /* Category */,
 				391718CF24C870FF0096A307 /* Header */,
+				141328E624D6C86400EEC3D4 /* PrefixHeader.pch */,
 			);
 			path = ZNUIKit;
 			sourceTree = "<group>";
@@ -480,8 +548,8 @@
 			isa = PBXGroup;
 			children = (
 				39E9F3F224CB3145007BF08E /* ZNMediator.h */,
-				39E9F3F324CB3145007BF08E /* ZNMediatorDelegate.h */,
 				39E9F3F424CB3145007BF08E /* ZNMediator.m */,
+				39E9F3F324CB3145007BF08E /* ZNMediatorDelegate.h */,
 			);
 			path = ZNMediator;
 			sourceTree = "<group>";
@@ -612,6 +680,7 @@
 				1414283824CC20B00024C137 /* UIView+ZNCorner.m in Sources */,
 				39171A9224C871020096A307 /* NSString+ZNString.m in Sources */,
 				39171A8724C871020096A307 /* UIImage+ZNImage.m in Sources */,
+				141328DD24D6C53900EEC3D4 /* Target_ViewFactory.m in Sources */,
 				39E9F3EC24CB2E12007BF08E /* UIImage+ZNZoom.m in Sources */,
 				39171AA324C871020096A307 /* UIViewController+ZNViewController.m in Sources */,
 				39171A8F24C871020096A307 /* NSString+ZNDate.m in Sources */,
@@ -630,15 +699,20 @@
 				39171A9324C871020096A307 /* NSObject+ZNSql.m in Sources */,
 				39171A9B24C871020096A307 /* UIButton+ZNButton.m in Sources */,
 				39E9F3F524CB3145007BF08E /* ZNMediator.m in Sources */,
+				141328E524D6C70500EEC3D4 /* ZNBaseViewModel.m in Sources */,
 				39171A9924C871020096A307 /* UILabel+ZNLabel.m in Sources */,
+				141328D324D6AE3500EEC3D4 /* InnerViewController.m in Sources */,
 				39171A9A24C871020096A307 /* UIButton+ZNCreate.m in Sources */,
 				39171AA724C871020096A307 /* UITextField+ZNCreate.m in Sources */,
 				39171AA524C871020096A307 /* UITableView+ZNExtendTableView.m in Sources */,
 				39171A9424C871020096A307 /* NSObject+ZNObject.m in Sources */,
 				39171AA124C871020096A307 /* UIImageView+ZNCreate.m in Sources */,
 				3917186B24C870400096A307 /* main.m in Sources */,
+				141328D624D6B15F00EEC3D4 /* ZNMediator+ViewFactory.m in Sources */,
+				141328D924D6B7C800EEC3D4 /* InnerViewModel.m in Sources */,
 				39171A9524C871020096A307 /* NSDate+ZNDate.m in Sources */,
 				3917185D24C8703E0096A307 /* SceneDelegate.m in Sources */,
+				141328E224D6C6D300EEC3D4 /* ZNBaseViewController.m in Sources */,
 				39171AA824C871020096A307 /* UITextField+ZNTextField.m in Sources */,
 				39171B4F24C87A200096A307 /* ZNEncryptTool.m in Sources */,
 				39171A9824C871020096A307 /* UILabel+ZNCreate.m in Sources */,
@@ -790,6 +864,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VP2LDN2LNL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZNUIKit/PrefixHeader.pch";
 				INFOPLIST_FILE = ZNUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -808,6 +883,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VP2LDN2LNL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZNUIKit/PrefixHeader.pch";
 				INFOPLIST_FILE = ZNUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
